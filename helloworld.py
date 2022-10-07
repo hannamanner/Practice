@@ -1,9 +1,10 @@
-
+import time
 y = "Good day!"
 print(y)
 x = int(input("How many customers in line? "))
 if x > 1:
     print("Please take a seat!")
+time.sleep(10)
 print("Next, please!")
 
 prescription = input("Do you have a prescription? (Yes/No): ")
