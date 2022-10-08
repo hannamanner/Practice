@@ -12,17 +12,16 @@ while True:
         print("There's no way!")
     else:
         break
-
-if x > 1:
+doze = 5
+if x > 1: # If there's more than just you
     print("Please take a seat!")
-    doze = 5
-    x = x-1
-while x > 2:
-    x = x-1
+    
+    while x > 2:
+        x = x-1 # The number of people before you
+        time.sleep(doze)
+        print(f"Just a bit longer, only {x} more people before you...")
     time.sleep(doze)
-    print(f"Just a bit longer, only {x} more people before you...")
-time.sleep(doze)
-print(f"Just a bit longer, only 1 more person before you...")
+    print(f"Just a bit longer, only {x-1} more person before you...")
 time.sleep(doze)
 print("Next, please!")
 
